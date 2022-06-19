@@ -1,6 +1,13 @@
 // complete the function
 function prime (num) {
   // code goes here
+  for(var x = 2; x < num; x++) {
+    if(num % x === 0){
+      console.log(num + " is divisible by " + x);
+      return false;
+    }
+  }
+  return true;
 }
 
 function solution (arg) {
@@ -17,3 +24,5 @@ if (typeof require !== "undefined" && require.main === module) {
 }
 
 module.exports = { solution };
+
+
